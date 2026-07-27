@@ -159,8 +159,8 @@ int main()
     auto aosTime = timeIt([&]()
                           { return farthestPointSampling<AOSCloud>(aosCloud, N, K); });
 
-    cout << "FPS algorithm for SOA layout: " << soaTime << " ns" << endl;
-    cout << "FPS algorithm for Aos layout: " << aosTime << " ns" << endl;
+    cout << "FPS algorithm for SOA layout: " << soaTime << " us" << endl;
+    cout << "FPS algorithm for Aos layout: " << aosTime << " us" << endl;
 
     // for (auto index : soaResult)
     // {
